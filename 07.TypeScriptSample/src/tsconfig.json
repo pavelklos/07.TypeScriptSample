@@ -1,0 +1,20 @@
+// https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+{
+  "compileOnSave": true, // NEW
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "inlineSourceMap": true, // NEW
+    "inlineSources": true, // NEW
+    "module": "system", // NEW : system = SystemJS module loader
+    "moduleResolution": "node", // NEW
+    //"sourceMap": true,
+    "target": "es5",
+    "outDir": "../wwwroot/js" // NEW
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}
